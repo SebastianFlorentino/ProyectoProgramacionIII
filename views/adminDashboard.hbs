@@ -1,0 +1,69 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h2>Panel de Administrador</h2>
+  <!-- Botón de Cerrar Sesión como enlace -->
+  <a href="/auth/logout" class="btn btn-outline-danger">Cerrar Sesión</a>
+</div>
+
+<!-- Tabla de Usuarios -->
+<h3>Usuarios</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre de Usuario</th>
+      <th>Rol</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each users}}
+      <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.username}}</td>
+        <td>{{this.role}}</td>
+        <td>
+          <!-- Botón para editar el usuario -->
+          <a href="/admin/edit/user/{{this.id}}" class="btn btn-warning btn-sm">Editar</a>
+          <!-- Botón para eliminar el usuario -->
+          <form action="/admin/delete/user/{{this.id}}" method="POST" style="display:inline;">
+            <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+          </form>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<!-- Tabla de Reservaciones -->
+<h3>Reservaciones</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Personas</th>
+      <th>Fecha</th>
+      <th>Hora</th>
+      <th>Correo</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each reservations}}
+      <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.people}}</td>
+        <td>{{this.date}}</td>
+        <td>{{this.time}}</td>
+        <td>{{this.email}}</td>
+        <td>
+          <!-- Botón para editar la reservación -->
+          <a href="/admin/edit/reservation/{{this.id}}" class="btn btn-warning btn-sm">Editar</a>
+          <!-- Botón para eliminar la reservación -->
+          <form action="/admin/delete/reservation/{{this.id}}" method="POST" style="display:inline;">
+            <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+          </form>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

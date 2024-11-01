@@ -1,0 +1,6 @@
+{
+    "watch": ["controllers", "models", "routes", "views"],
+    "ext": "js,json,hbs",
+    "exec": "node app.js"
+  }
+  

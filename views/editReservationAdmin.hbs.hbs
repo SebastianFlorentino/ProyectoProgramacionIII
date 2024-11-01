@@ -1,0 +1,28 @@
+<div class="card mx-auto" style="max-width: 600px;">
+  <div class="card-body">
+    <h2 class="card-title text-center">Editar Reservación (Administrador)</h2>
+    <form action="/reservations/edit/{{reservation.id}}" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" name="name" value="{{reservation.name}}" required>
+      </div>
+      <div class="mb-3">
+        <label for="people" class="form-label">Número de Personas</label>
+        <input type="number" class="form-control" id="people" name="people" value="{{reservation.people}}" required>
+      </div>
+      <div class="mb-3">
+        <label for="date" class="form-label">Fecha</label>
+        <input type="date" class="form-control" id="date" name="date" value="{{reservation.date}}" required>
+      </div>
+      <div class="mb-3">
+        <label for="time" class="form-label">Hora</label>
+        <input type="time" class="form-control" id="time" name="time" value="{{reservation.time}}" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" value="{{reservation.email}}" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Guardar Cambios</button>
+    </form>
+  </div>
+</div>

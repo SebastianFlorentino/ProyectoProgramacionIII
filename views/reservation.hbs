@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Reservación</title>
+    <link rel="stylesheet" href="/css/reservation.css"> <!-- Enlazar el CSS -->
+</head>
+<body>
+    <div class="card mx-auto" style="max-width: 600px;">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="card-title">Nueva Reservación</h2>
+                <!-- Botón de Cerrar Sesión -->
+                <a href="/auth/logout" class="btn btn-outline-danger btn-sm">Cerrar Sesión</a>
+            </div>
+
+            <form action="/reservations/new" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="people" class="form-label">Número de personas</label>
+                    <input type="number" class="form-control" id="people" name="people" required>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Fecha</label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                </div>
+                <div class="mb-3">
+                    <label for="time" class="form-label">Hora</label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <button type="submit" class="btn btn-success btn-block mb-3">Confirmar Reservación</button>
+            </form>
+
+            <!-- Contenedor para los botones de "Ver Reservaciones" -->
+            <div class="button-group text-center">
+                <a href="/reservations/list" class="btn btn-secondary">Ver Reservaciones</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

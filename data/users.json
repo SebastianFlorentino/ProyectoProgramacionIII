@@ -1,0 +1,36 @@
+[
+  {
+    "username": "admin",
+    "password": "$2b$10$2YjBC3iDFYrmd3rCLaN.BOfr0Ba/TCVM8gG8FosYRVEYPtt3n6hzi",
+    "role": "admin"
+  },
+  {
+    "username": "franklinelo29@gmail.com",
+    "password": "$2b$10$evSPVYGpdPdGR9M2BSELE.Ys4Jt7usHEr3UXLMrSUhdkLeFxje.Ty",
+    "role": "user"
+  },
+  {
+    "id": "dcadb66e-d807-4875-a0fe-725682066722",
+    "username": "fcordero",
+    "password": "$2b$10$Md.lro9rvqHWGQwHf5cRB.HNuIpbZibNj5oy2CvEqoF/9zJG3Wwhm",
+    "role": "user"
+  },
+  {
+    "id": "70a71d3b-17e9-4a29-80fd-0017ec6709d7",
+    "username": "Marios20",
+    "password": "$2b$10$3GKC2yPhaP2g/u5QpGNH5.kNGif4jB3rBh//591/TSCyhMp8MOA9i",
+    "role": "user"
+  },
+  {
+    "id": "06b07eaf-55f7-42df-a65c-b0549ed13ee0",
+    "username": "Juanito",
+    "password": "$2b$10$JJvSK2FF0Fi8fIjTUWYRZuBuKD46Aa9j4Wt4QqkGgBTG4GK/wXLSS",
+    "role": "user"
+  },
+  {
+    "id": "9b289ec3-ad8c-49f4-bcc1-5b335c4ba0a0",
+    "username": "Sebastian",
+    "password": "$2b$10$h2/70TjSa41Gokw4uLDJBe.uk4D7SsyWTaLAeYX4OBaav0YBEzxVa",
+    "role": "user"
+  }
+]

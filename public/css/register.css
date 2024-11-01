@@ -1,0 +1,82 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3e5ab; /* Color suave de fondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor de la tarjeta de registro */
+.card {
+  background-color: #ffffff; /* Fondo blanco para la tarjeta */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  padding: 30px; /* Espaciado interno */
+  width: 100%;
+  max-width: 400px; /* Ancho máximo de la tarjeta */
+}
+
+/* Títulos de la tarjeta */
+.card-title {
+  color: #8e5b2d; /* Color marrón cálido */
+  font-size: 24px; /* Tamaño del texto */
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilos para etiquetas de formulario */
+label {
+  color: #5a5a5a; /* Color gris oscuro */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* Ancho completo */
+  padding: 12px; /* Espaciado interno */
+  margin-bottom: 15px; /* Espacio debajo del campo */
+  border: 1px solid #d0d0d0; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+/* Estilo para el botón de registro */
+button[type="submit"] {
+  background-color: #d35400; /* Color naranja */
+  color: #ffffff; /* Texto blanco */
+  padding: 12px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a puntero */
+  font-size: 16px; /* Tamaño de texto */
+  transition: background-color 0.3s; /* Transición suave al pasar el ratón */
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+button[type="submit"]:hover {
+  background-color: #e67e22; /* Color más claro al pasar el ratón */
+}
+
+/* Estilo para enlaces */
+a {
+  color: #d35400; /* Color naranja */
+  text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+  text-decoration: underline; /* Subrayar al pasar el ratón */
+  color: #e67e22; /* Color más claro al pasar el ratón */
+}
+
+/* Mensajes de error (si los necesitas) */
+.alert {
+  background-color: #f8d7da; /* Color de fondo rojo claro */
+  color: #721c24; /* Color de texto rojo oscuro */
+  border: 1px solid #f5c6cb; /* Borde rojo claro */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 15px; /* Espacio debajo del mensaje */
+}

@@ -1,0 +1,68 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8; /* Color de fondo suave */
+}
+
+/* Contenedor de la tarjeta de reservación */
+.card {
+    background-color: #ffffff; /* Fondo blanco para la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Títulos */
+h2 {
+    color: #8e5b2d; /* Color marrón cálido */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilo para botones */
+.btn-primary {
+    background-color: #d35400; /* Color naranja */
+    border: none; /* Sin borde */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.btn-primary:hover {
+    background-color: #e67e22; /* Color más claro al pasar el ratón */
+}
+
+.btn-secondary {
+    background-color: #555; /* Color gris */
+    border: none; /* Sin borde */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.btn-secondary:hover {
+    background-color: #777; /* Color más claro al pasar el ratón */
+}
+
+/* Estilo para la tabla */
+.table {
+    width: 100%; /* Ancho completo */
+    margin-top: 20px; /* Margen superior */
+}
+
+.table th {
+    background-color: #d35400; /* Color naranja */
+    color: white; /* Texto blanco */
+    padding: 10px; /* Espaciado interno */
+}
+
+.table td {
+    padding: 10px; /* Espaciado interno */
+    border-bottom: 1px solid #ddd; /* Borde inferior */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9; /* Color de fondo para filas impares */
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/register.css"> <!-- Enlazar el CSS -->
+</head>
+<body>
+    <div class="card mx-auto" style="max-width: 500px;">
+        <div class="card-body">
+            <h2 class="card-title text-center">Registro</h2>
+            <form action="/auth/register" method="POST">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Nombre de usuario</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+            </form>
+            <div class="text-center mt-3">
+                <p>¿Ya estás registrado?</p>
+                <a href="/auth/login" class="btn btn-secondary">Iniciar Sesión</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
